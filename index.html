@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cole Dudley · Maker, Los Angeles</title>
+<meta name="description" content="Cole Dudley, bike restorer and printmaker working in Los Angeles. Selected work, bike gallery, and contact for apprenticeships, residencies, and public art opportunities.">
+<meta name="theme-color" content="#F2EEE5">
+
+<link rel="canonical" href="https://twowheelsteals.com/">
+
+<meta property="og:title" content="Cole Dudley · Maker, Los Angeles">
+<meta property="og:description" content="Printmaker and bike builder in Los Angeles. Selected work, bike gallery, and contact for apprenticeships, residencies, and public-art commissions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twowheelsteals.com/">
+<meta property="og:image" content="https://twowheelsteals.com/assets/portfolio/bike/sewcycle-01.jpg">
+<meta property="og:image:alt" content="SewCycle: a pedal-powered sewing machine built by Cole Dudley.">
+<meta property="og:site_name" content="Cole Dudley">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cole Dudley · Maker, Los Angeles">
+<meta name="twitter:description" content="Printmaker and bike builder in Los Angeles.">
+<meta name="twitter:image" content="https://twowheelsteals.com/assets/portfolio/bike/sewcycle-01.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23F2EEE5'/%3E%3Ctext x='50' y='66' font-family='Georgia,serif' font-size='56' font-weight='700' text-anchor='middle' fill='%231F2421'%3EC%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bone:      #F2EEE5;
+    --shell:     #E8E1D3;
+    --ink:       #1F2421;
+    --ink-soft:  #5A5F5B;
+    --sage:      #8A9684;
+    --clay:      #B86F4E;
+    --clay-deep: #9B5A3F;
+
+    --font: 'Figtree', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+    --w-narrow: 720px;
+    --w-wide:   920px;
+
+    --pad-section: clamp(56px, 9vw, 96px);
+    --pad-side:    clamp(22px, 5vw, 40px);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--bone);
+    color: var(--ink);
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  @media (min-width: 768px) {
+    body { font-size: 18px; }
+  }
+
+  img, picture { display: block; max-width: 100%; height: auto; }
+
+  a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--sage);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+    transition: text-decoration-color 0.15s ease;
+  }
+  a:hover { text-decoration-color: var(--clay); }
+  a:focus-visible {
+    outline: 2px solid var(--clay);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Skip link */
+  .skip {
+    position: absolute; left: -9999px;
+    background: var(--ink); color: var(--bone);
+    padding: 12px 16px; z-index: 100;
+  }
+  .skip:focus { left: 12px; top: 12px; }
+
+  /* Layout containers */
+  .wrap { max-width: var(--w-narrow); margin: 0 auto; padding: 0 var(--pad-side); }
+  .wrap-wide { max-width: var(--w-wide); margin: 0 auto; padding: 0 var(--pad-side); }
+
+  section { padding: var(--pad-section) 0; }
+  section + section { padding-top: 0; }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(242, 238, 229, 0.92);
+    backdrop-filter: saturate(140%) blur(8px);
+    -webkit-backdrop-filter: saturate(140%) blur(8px);
+    border-bottom: 1px solid rgba(138, 150, 132, 0.25);
+  }
+  .nav-inner {
+    max-width: var(--w-wide);
+    margin: 0 auto;
+    padding: 14px var(--pad-side);
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px;
+  }
+  .nav-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .nav-mark:hover { text-decoration: none; }
+  .nav-logo {
+    display: block;
+    height: 32px;
+    width: auto;
+  }
+  .nav-cta {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink);
+    padding: 9px 16px;
+    border: 1.5px solid var(--ink);
+    background: transparent;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .nav-cta:hover { background: var(--ink); color: var(--bone); }
+
+  /* ---------- Hero ---------- */
+  .hero { padding-top: clamp(48px, 10vh, 96px); }
+  .hero h1 {
+    font-weight: 800;
+    font-size: clamp(44px, 9vw, 88px);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px;
+  }
+  .hero-lede {
+    font-size: clamp(18px, 2.4vw, 22px);
+    line-height: 1.45;
+    color: var(--ink-soft);
+    max-width: 32ch;
+    margin: 0 0 36px;
+  }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 20px;
+    align-items: center;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 22px;
+    border: 1.5px solid currentColor;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .btn-primary {
+    background: var(--clay);
+    border-color: var(--clay);
+    color: var(--bone);
+  }
+  .btn-primary:hover { background: var(--clay-deep); border-color: var(--clay-deep); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+  }
+  .btn-ghost:hover { background: var(--ink); color: var(--bone); }
+
+  .meta-line {
+    font-size: 14px;
+    color: var(--ink-soft);
+    letter-spacing: 0.02em;
+  }
+
+  /* ---------- Section eyebrow + headers ---------- */
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin: 0 0 18px;
+  }
+  .section-title {
+    font-weight: 800;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    margin: 0 0 20px;
+  }
+  .section-lede {
+    font-size: clamp(17px, 2vw, 19px);
+    color: var(--ink-soft);
+    max-width: 56ch;
+    margin: 0 0 48px;
+  }
+
+  /* Quiet rule between sections */
+  .rule {
+    border: 0;
+    height: 1px;
+    background: rgba(138, 150, 132, 0.4);
+    max-width: var(--w-wide);
+    margin: 0 auto;
+  }
+
+  /* ---------- About ---------- */
+  .about p { margin: 0 0 18px; max-width: 60ch; }
+  /* ---------- Portfolio ---------- */
+  .work-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 64px 40px;
+  }
+  @media (min-width: 720px) {
+    .work-grid { grid-template-columns: 1fr 1fr; gap: 72px 48px; }
+  }
+
+  .piece { display: flex; flex-direction: column; }
+  .piece h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 24px 0 6px;
+  }
+  .piece-meta {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin: 0 0 14px;
+  }
+  .piece p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  /* Image slot — placeholder until file dropped in */
+  .slot {
+    position: relative;
+    background: var(--shell);
+    overflow: hidden;
+    margin: 0;
+  }
+  .slot::before {
+    content: attr(data-slot);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    background: var(--shell);
+    background-image:
+      linear-gradient(135deg, transparent 49%, rgba(90,95,91,0.08) 49%, rgba(90,95,91,0.08) 51%, transparent 51%);
+    background-size: 14px 14px;
+    z-index: 0;
+  }
+  .slot picture, .slot img, .slot video {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .slot img.broken { display: none; }
+  .slot.ratio-portrait { aspect-ratio: 4 / 5; }
+  .slot.ratio-square   { aspect-ratio: 1 / 1; }
+  .slot.ratio-landscape{ aspect-ratio: 4 / 3; }
+
+  /* Print / poster art — show the work at its natural ratio, no crop */
+  .art-frame {
+    margin: 0;
+    background: var(--shell);
+    overflow: hidden;
+  }
+  .art-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .art-frame a {
+    display: block;
+    cursor: zoom-in;
+  }
+  .art-frame a img { transition: opacity 160ms ease; }
+  .art-frame a:hover img { opacity: 0.88; }
+  .art-frame a:focus-visible { outline: 2px solid var(--sage); outline-offset: 3px; }
+
+  /* Carousel — scroll-snap with prev/next + dots */
+  .carousel { position: relative; }
+  .carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .carousel-track::-webkit-scrollbar { display: none; }
+  .carousel-track > .slot {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(31, 36, 33, 0.55);
+    color: var(--bone);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 160ms ease, background 160ms ease;
+    z-index: 2;
+  }
+  .carousel:hover .carousel-btn,
+  .carousel-btn:focus-visible { opacity: 1; }
+  .carousel-btn:hover { background: rgba(31, 36, 33, 0.8); }
+  .carousel-btn[data-dir="prev"] { left: 12px; }
+  .carousel-btn[data-dir="next"] { right: 12px; }
+  .carousel-btn[disabled] { opacity: 0; pointer-events: none; }
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .carousel-dots button {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    background: var(--shell);
+    cursor: pointer;
+    transition: background 160ms ease;
+  }
+  .carousel-dots button[aria-current="true"] { background: var(--sage); }
+  @media (hover: none) {
+    .carousel-btn { display: none; }
+  }
+
+  /* ---------- Gallery ---------- */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  @media (min-width: 720px) {
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+  }
+  .gallery-grid .slot { aspect-ratio: 1 / 1; }
+  .gallery-grid .slot.tall { aspect-ratio: 3 / 4; }
+  @media (min-width: 720px) {
+    .gallery-grid .slot.wide { grid-column: span 2; aspect-ratio: 16 / 10; }
+  }
+
+  /* ---------- Contact ---------- */
+  .contact { padding-bottom: clamp(80px, 12vw, 120px); }
+  .contact-card {
+    border-top: 1px solid rgba(138, 150, 132, 0.4);
+    padding-top: var(--pad-section);
+  }
+  .contact h2 {
+    font-weight: 800;
+    font-size: clamp(40px, 7vw, 72px);
+    line-height: 0.98;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px;
+  }
+  .contact-lede {
+    font-size: clamp(17px, 2vw, 20px);
+    color: var(--ink-soft);
+    max-width: 40ch;
+    margin: 0 0 36px;
+  }
+  .contact-list {
+    display: grid;
+    gap: 6px;
+    margin: 0 0 36px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .contact-list a { font-weight: 500; }
+  .contact-name {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 6px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    padding: 32px 0 48px;
+    border-top: 1px solid rgba(138, 150, 132, 0.25);
+    color: var(--ink-soft);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+  footer .wrap-wide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-mark" href="#top">
+      <img class="nav-logo" src="assets/logo.png" alt="" width="42" height="32" decoding="async">
+      <span>Cole Dudley</span>
+    </a>
+    <a class="nav-cta" href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="wrap">
+      <h1>Cole Dudley</h1>
+      <p class="hero-lede">Printmaker and bike builder in Los Angeles. Just graduated, open to apprenticeships, residencies, and public-art commissions.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="#work">See my work</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" aria-hidden="true">
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="wrap">
+      <p class="eyebrow">01 · About</p>
+      <h2 class="section-title">Hi, I'm Cole.</h2>
+      <p>I just graduated from LMU with a BA in Studio Arts and a minor in math. For the past few years I've worked at The Cycling Lion (the campus bike shop) and run a small restoration project on the side called Two Wheel Steals, which has put more than three hundred affordable bikes back on the road for Angelenos.</p>
+      <p>I make prints, posters, and the occasional functional-art piece, like the pedal-powered sewing machine below. I'm looking for apprenticeships, residencies, public-art commissions, or shop work, ideally somewhere I can keep learning from people who've been doing this longer. My <a href="assets/resume.pdf" target="_blank" rel="noopener">resume</a> has the rest.</p>
+    </div>
+  </section>
+
+  <hr class="rule" aria-hidden="true">
+
+  <!-- PORTFOLIO -->
+  <section id="work">
+      <div class="wrap-wide">
+        <p class="eyebrow">02 · Selected Work</p>
+
+      <div class="work-grid">
+
+        <article class="piece">
+          <div class="carousel" aria-roledescription="carousel" aria-label="SewCycle photos">
+            <ul class="carousel-track">
+              <li class="slot ratio-portrait" data-slot="Portfolio · SewCycle 01 · sewcycle-01.jpg">
+                <img src="assets/portfolio/bike/sewcycle-01.jpg" alt="SewCycle: a pedal-powered sewing machine built from a vintage stationary bike frame driving a Singer 15 sewing machine." width="1028" height="1300" fetchpriority="high" decoding="async">
+              </li>
+              <li class="slot ratio-portrait" data-slot="Portfolio · SewCycle 02 · sewcycle-02.jpg">
+                <img src="assets/portfolio/bike/sewcycle-02.jpg" alt="SewCycle: detail view of the chain and pulley drive system connecting the pedals to the sewing machine." loading="lazy" decoding="async" width="1300" height="975">
+              </li>
+              <li class="slot ratio-portrait" data-slot="Portfolio · SewCycle 03 · sewcycle-03.jpg">
+                <img src="assets/portfolio/bike/sewcycle-03.jpg" alt="SewCycle: additional view of the pedal-powered sewing machine." loading="lazy" decoding="async" width="975" height="1300">
+              </li>
+            </ul>
+            <button class="carousel-btn" data-dir="prev" aria-label="Previous image" type="button">‹</button>
+            <button class="carousel-btn" data-dir="next" aria-label="Next image" type="button">›</button>
+            <ul class="carousel-dots" aria-hidden="true"></ul>
+          </div>
+          <h3>The Sew Cycle</h3>
+          <p class="piece-meta">Pedal-powered Singer 15 sewing machine</p>
+          <p>The pedals drive the machine. Ride to sew.</p>
+        </article>
+
+        <article class="piece">
+          <div class="carousel" aria-roledescription="carousel" aria-label="Semi-recumbent tandem photos">
+            <ul class="carousel-track">
+              <li class="slot ratio-portrait" data-slot="Portfolio · Tandem 01 · tandem-01.jpg">
+                <img src="assets/portfolio/bike/tandem-01.jpg" alt="Semi-recumbent tandem bicycle: a custom-built tandem with a recumbent front rider position." loading="lazy" decoding="async" width="1019" height="1200">
+              </li>
+              <li class="slot ratio-portrait" data-slot="Portfolio · Tandem 02 · tandem-02.jpg">
+                <img src="assets/portfolio/bike/tandem-02.jpg" alt="Semi-recumbent tandem: second view." loading="lazy" decoding="async" width="1300" height="975">
+              </li>
+              <li class="slot ratio-portrait" data-slot="Portfolio · Tandem 03 · tandem-03.jpg">
+                <img src="assets/portfolio/bike/tandem-03.jpg" alt="Semi-recumbent tandem: third view." loading="lazy" decoding="async" width="975" height="1300">
+              </li>
+              <li class="slot ratio-portrait" data-slot="Portfolio · Tandem video · hype-recumbent.mp4">
+                <video controls preload="none" poster="assets/portfolio/bike/hype-recumbent-poster.jpg" playsinline width="675" height="1200">
+                  <source src="assets/portfolio/bike/hype-recumbent.mp4" type="video/mp4">
+                  Your browser doesn't support embedded video. Download: <a href="assets/portfolio/bike/hype-recumbent.mp4">hype-recumbent.mp4</a>
+                </video>
+              </li>
+            </ul>
+            <button class="carousel-btn" data-dir="prev" aria-label="Previous image" type="button">‹</button>
+            <button class="carousel-btn" data-dir="next" aria-label="Next image" type="button">›</button>
+            <ul class="carousel-dots" aria-hidden="true"></ul>
+          </div>
+          <h3>Semi-Recumbent Tandem</h3>
+          <p class="piece-meta">Recently refurbished oddball bicycle</p>
+          <p>Ideal for bikepacking with a close friend.</p>
+        </article>
+
+        <article class="piece">
+          <figure class="art-frame">
+            <a href="assets/portfolio/print/externalabandonement150dpi.png" target="_blank" rel="noopener" aria-label="Open External Abandonment full-resolution image in a new tab">
+              <img src="assets/portfolio/print/portfolio-print-01.jpg" alt="External Abandonment: a four-color aluminum plate lithograph of a Los Angeles freeway interchange viewed from above, with the Hollywood Hills on fire in the distance and small figures on bicycles below." loading="lazy" decoding="async" width="743" height="1200">
+            </a>
+          </figure>
+          <h3>External Abandonment</h3>
+          <p class="piece-meta">Four-color aluminum plate lithograph · 10 × 17 in</p>
+        </article>
+
+        <article class="piece">
+          <figure class="art-frame">
+            <a href="assets/portfolio/print/gulfofamerica300dpi.png" target="_blank" rel="noopener" aria-label="Open Gulf of America full-resolution image in a new tab">
+              <img src="assets/portfolio/print/portfolio-print-02.jpg" alt="Gulf of America: a black-and-white aluminum plate lithograph of a figure pedaling a bicycle around a globe, with a rocket overhead and flames on the earth's surface." loading="lazy" decoding="async" width="758" height="1200">
+            </a>
+          </figure>
+          <h3>Gulf of America</h3>
+          <p class="piece-meta">Black-and-white aluminum plate lithograph · 7 × 9 in</p>
+        </article>
+
+        <article class="piece">
+          <figure class="art-frame">
+            <a href="assets/portfolio/print/stphattys150dpi.png" target="_blank" rel="noopener" aria-label="Open St. Phatty's full-resolution image in a new tab">
+              <img src="assets/portfolio/print/portfolio-print-03.jpg" alt="St. Phatty's: a watercolor and colored-pencil drawing of a tiger, a lion, and a rider on bicycles racing past a storefront labeled 'St. Phatty Oh's Vape and Pub'." loading="lazy" decoding="async" width="1200" height="850">
+            </a>
+          </figure>
+          <h3>St. Phatty's</h3>
+          <p class="piece-meta">Watercolor and colored pencil · 12 × 18 in</p>
+        </article>
+
+        <article class="piece">
+          <figure class="art-frame">
+            <a href="assets/portfolio/print/treadwithcaution300dpi.png" target="_blank" rel="noopener" aria-label="Open Tread with Caution full-resolution image in a new tab">
+              <img src="assets/portfolio/print/portfolio-print-04.jpg" alt="Tread with Caution: an acrylic relief etching of a sphinx-like creature seated in front of a brick wall, signed and titled along the right edge. Edition 5/5." loading="lazy" decoding="async" width="889" height="1200">
+            </a>
+          </figure>
+          <h3>Tread with Caution</h3>
+          <p class="piece-meta">Acrylic relief etching · 5 × 7 in · Edition of 5</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" aria-hidden="true">
+
+  <!-- POSTERS & FLYERS -->
+  <section id="posters">
+    <div class="wrap-wide">
+      <p class="eyebrow">03 · Posters & Flyers</p>
+      <h2 class="section-title">Event posters and flyer design.</h2>
+      <p class="section-lede">Hand-drawn and digital posters for local events, shops, and charity drives. Open to commissions.</p>
+
+      <div class="work-grid">
+
+        <article class="piece">
+          <figure class="art-frame">
+            <img src="assets/portfolio/posters/poster-01.jpg" alt="Crimson Flea Market poster: hand-illustrated event flyer announcing a buy-sell-trade market on O'Malley Lawn with live music, free food and a raffle, set against palm trees and a sunlit chapel." loading="lazy" decoding="async" width="954" height="1234">
+          </figure>
+          <h3>Crimson Flea Market</h3>
+          <p class="piece-meta">Event poster · Hand illustration + digital · 2026</p>
+        </article>
+
+        <article class="piece">
+          <figure class="art-frame">
+            <img src="assets/portfolio/posters/poster-02.jpg" alt="Power Slide flyer: a pencil-drawn promo for a coffee drink from The Cycling Lion, featuring a rider on a bike with a drink in hand and a desert horizon behind." loading="lazy" decoding="async" width="893" height="1200">
+          </figure>
+          <h3>Power Slide</h3>
+          <p class="piece-meta">Shop promo flyer · Pencil illustration · 2026</p>
+        </article>
+
+        <article class="piece">
+          <figure class="art-frame">
+            <img src="assets/portfolio/posters/poster-03.jpg" alt="Feeling Dirty? Car Wash for Charity: a sunset palm-tree scene with a vintage sedan, illustrated typography, and date and location details." loading="lazy" decoding="async" width="954" height="1234">
+          </figure>
+          <h3>Feeling Dirty?</h3>
+          <p class="piece-meta">Charity car-wash flyer · Mixed media · 2025</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" aria-hidden="true">
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="wrap-wide">
+      <p class="eyebrow">04 · Bike Gallery</p>
+      <h2 class="section-title">More from the workshop.</h2>
+      <p class="section-lede">Restorations and builds. Over three hundred bikes back on the road.</p>
+
+      <div class="gallery-grid">
+        <figure class="slot wide" data-slot="Gallery 01 · gallery-01.webp">
+          <img src="assets/gallery/bikes/gallery-01.webp" alt="Two restored bikes (an olive green mixte and a black step-through) parked side by side outside a modernist building." loading="lazy" decoding="async">
+        </figure>
+        <figure class="slot" data-slot="Gallery 02 · gallery-02.webp">
+          <img src="assets/gallery/bikes/gallery-02.webp" alt="A silver-and-blue cruiser parked in front of a hedge of blooming purple agapanthus." loading="lazy" decoding="async">
+        </figure>
+        <figure class="slot" data-slot="Gallery 03 · gallery-03.webp">
+          <img src="assets/gallery/bikes/gallery-03.webp" alt="A dark green cruiser with cream tires on a dirt path, dry chaparral grasses and Los Angeles hills in the distance." loading="lazy" decoding="async">
+        </figure>
+        <figure class="slot" data-slot="Gallery 04 · gallery-04.webp">
+          <img src="assets/gallery/bikes/gallery-04.webp" alt="A red Schwinn-style step-through frame photographed in golden-hour light with garden foliage behind." loading="lazy" decoding="async">
+        </figure>
+        <figure class="slot" data-slot="Gallery 05 · gallery-05.webp">
+          <img src="assets/gallery/bikes/gallery-05.webp" alt="A clean side profile of a yellow Trek mountain bike against a white stucco wall." loading="lazy" decoding="async">
+        </figure>
+        <figure class="slot" data-slot="Gallery 06 · gallery-06.webp">
+          <img src="assets/gallery/bikes/gallery-06.webp" alt="Detail of a teal cruiser fender with a hand-painted red ornamental decal and a wire basket above." loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <p class="eyebrow">05 · Contact</p>
+        <h2>Let's talk.</h2>
+        <p class="contact-lede">Email is the best way to reach me, and I'd genuinely love to hear from anyone working on something creative. Residencies, commissions, collaborations, weird ideas: all welcome.</p>
+
+        <div class="contact-list">
+          <p class="contact-name">Cole Dudley</p>
+          <p><a href="mailto:colewdudley@icloud.com">colewdudley@icloud.com</a></p>
+          <p><a href="tel:+15309027227">530.902.7227</a></p>
+        </div>
+
+        <a class="btn btn-primary" href="mailto:colewdudley@icloud.com?subject=Hello%20Cole">Email me</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap-wide">
+    <span>© <span id="year">2026</span> Cole Dudley</span>
+    <span>Los Angeles · Made by hand</span>
+  </div>
+</footer>
+
+<script>
+  // Hide broken images so the labeled placeholder shows through
+  // until the matching file is dropped into /assets.
+  document.querySelectorAll('.slot img').forEach(function (img) {
+    img.addEventListener('error', function () { img.classList.add('broken'); });
+    if (img.complete && img.naturalWidth === 0) img.classList.add('broken');
+  });
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Carousels
+  document.querySelectorAll('.carousel').forEach(function (carousel) {
+    var track = carousel.querySelector('.carousel-track');
+    var slides = track.querySelectorAll('.slot');
+    var prev = carousel.querySelector('.carousel-btn[data-dir="prev"]');
+    var next = carousel.querySelector('.carousel-btn[data-dir="next"]');
+    var dotsList = carousel.querySelector('.carousel-dots');
+
+    slides.forEach(function (_, i) {
+      var li = document.createElement('li');
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.setAttribute('aria-label', 'Go to image ' + (i + 1));
+      btn.addEventListener('click', function () {
+        track.scrollTo({ left: slides[i].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+      });
+      li.appendChild(btn);
+      dotsList.appendChild(li);
+    });
+    var dots = dotsList.querySelectorAll('button');
+
+    function activeIndex() {
+      var x = track.scrollLeft;
+      var best = 0;
+      var bestDist = Infinity;
+      slides.forEach(function (s, i) {
+        var d = Math.abs((s.offsetLeft - track.offsetLeft) - x);
+        if (d < bestDist) { bestDist = d; best = i; }
+      });
+      return best;
+    }
+    function update() {
+      var i = activeIndex();
+      dots.forEach(function (d, j) {
+        if (j === i) d.setAttribute('aria-current', 'true');
+        else d.removeAttribute('aria-current');
+      });
+      prev.disabled = i === 0;
+      next.disabled = i === slides.length - 1;
+    }
+    function step(dir) {
+      var i = activeIndex();
+      var target = Math.max(0, Math.min(slides.length - 1, i + dir));
+      track.scrollTo({ left: slides[target].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+    }
+    prev.addEventListener('click', function () { step(-1); });
+    next.addEventListener('click', function () { step(1); });
+    track.addEventListener('scroll', function () {
+      window.requestAnimationFrame(update);
+    });
+    update();
+  });
+</script>
+
+</body>
+</html>
